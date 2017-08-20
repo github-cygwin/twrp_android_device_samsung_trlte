@@ -81,3 +81,8 @@ TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
+
+# Init properties from bootloader version, ex. model info
+TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_trlte
+TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_TREE)/init/init_trlte.cpp
